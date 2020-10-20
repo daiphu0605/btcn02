@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./scripts/app.js" ></script>
+</head>
+    <body>
+        <div class="container" style="padding-left: 30px; padding-top: 20px;">
+            <form name="MyForm">
+                <h1>Bé tập tính</h1>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <label class="col-md-3">Số thứ nhất</label>
+                            <input class="col" type="number" id="first">
+                        </div>
+                        <div class="row">
+                            <label class="col-md-3">Số thứ hai</label>
+                            <input class="col" type="number" id="second">
+                        </div>
+                        <div class="row">
+                            <label class="col-md-3" for="result">Kết quả</label>
+                            <div id="result" class="col" style="border: 1px solid black;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col">
+                                <input type="radio" name="operator" value="1"> Cộng
+                            </div>
+                            <div class="col">
+                                <input type="radio" name="operator" value="2"> Trừ
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="radio" name="operator" value="3"> Nhân
+                            </div>
+                            <div class="col">
+                                <input type="radio" name="operator" value="4"> Chia
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" onclick="MyFunction()">Tính</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-md-3">Thông báo</label>
+                    <div id="Err" class="col"></div>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
